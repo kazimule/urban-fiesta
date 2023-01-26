@@ -19,9 +19,6 @@ paths:
           x-amf-mediaType: application/json
           schema:
             $ref: '#/definitions/PingResponse'
-  /added-later:
-    x-amf-description: Endpoint responsible for nothing
-    get:
   /payments:
     x-amf-description: Endpoint responsible for manipulation with payments
     post:
