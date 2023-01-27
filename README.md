@@ -1,6 +1,6 @@
 # create repo urban-fiesta
 #upload files (catalog.yaml, home.md, payments-oas.yaml
-#im GitHub Reiter Actions --> New Workflow --> Simple flow --> Inhalt ersetzt --> commit
+#im GitHub Reiter Actions --> New Workflow --> Simple flow --> Inhalt ersetzt mit blank.yaml vom coach --> commit
 #API catalog cli auf virtueller Maschine?
 #Anypoint Exchange API docu https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/exchange-experience-api/
 #...
@@ -23,8 +23,8 @@
           ANYPOINT_ORG_ID: ${{ secrets.ANYPOINT_ORGID }}
         run: |
           api-catalog publish-asset --force-update-metadata --organization="$ANYPOINT_ORG_ID" --client_id="$ANYPOINT_CLIENTID" --client_secret="$ANYPOINT_CLIENTSECRET"
-#benötigt ANYPOINT_CLIENTID, ANYPOINT_CLIENTSECRET, ANYPOINT_ORGID von Platform
-#gehe zu Settings --> secrets and variables --> für Actions --> ANYPOINT_CLIENTID, ANYPOINT_CLIENTSECRET, ANYPOINT_ORGID dort hinterlegen
+#benötigt ANYPOINT_CLIENTID, ANYPOINT_CLIENTSECRET, ANYPOINT_ORGID von Platform (Access Management--> Business Grups --> Settings.. die erste 3 Werte)
+#gehe zu Settings --> secrets and variables --> für Actions --> ANYPOINT_CLIENTID, ANYPOINT_CLIENTSECRET, ANYPOINT_ORGID dort hinterlegen, für jedes "New repo secret"
 #...?
 
 #Gehe zu Exchange--> Publish new Asset --> Name: Invoice Flex Payment System API, Asset Types: REST API, Upload on OAS: payments-oas.yaml, asset ID:invoice-payment-system-api, Stable --> Publish
