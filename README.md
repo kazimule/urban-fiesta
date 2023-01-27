@@ -26,6 +26,6 @@
         run: |
           api-catalog publish-asset --force-update-metadata --organization="$ANYPOINT_ORG_ID" --client_id="$ANYPOINT_CLIENTID" --client_secret="$ANYPOINT_CLIENTSECRET"
 #benötigt ANYPOINT_CLIENTID, ANYPOINT_CLIENTSECRET, ANYPOINT_ORGID von Platform
-#....
+#gehe zu Settings --> secrets and variables --> für Actions --> ANYPOINT_CLIENTID, ANYPOINT_CLIENTSECRET, ANYPOINT_ORGID dort hinterlegen
 #Anypoint Platform Design Center --> Create Button --> NAmen auswählen und REST API und dann urban-fiesta repo ausgewählt
 #Publish to Exchange
