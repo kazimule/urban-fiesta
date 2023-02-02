@@ -19,6 +19,21 @@ paths:
           x-amf-mediaType: application/json
           schema:
             $ref: '#/definitions/PingResponse'
+  /peng:
+    x-amf-displayName: Peng
+    get:
+      description: Get the current health status of this API
+      parameters:
+        - name: checkDependencies
+          description: Set to true to check and report status of all dependencies, such as system connections and downstream APIs; default is false
+          in: query
+          type: boolean
+      responses:
+        '200':
+          description: ''
+          x-amf-mediaType: application/json
+          schema:
+            $ref: '#/definitions/PingResponse'
   /payments:
     x-amf-description: Endpoint responsible for manipulation with payments
     post:
