@@ -12,3 +12,4 @@ projects:
       - commerce
     documentation:
       Home: home.md
+      Security: security.md
